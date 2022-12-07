@@ -189,7 +189,6 @@ body {
   padding: 10px 18px;
   border-radius: 10px;
   background-color: #fff;
-  /*width: auto;*/
 }
 
 .see-project:hover {
@@ -313,7 +312,7 @@ body {
   color: #000;
 }
 
-/*contact*/
+/* contact */
 
 .contact-section {
   background-color: #fff;
@@ -323,7 +322,7 @@ body {
   background-image: url(images/contact\ form\ shapes-mobile.svg);
   background-repeat: no-repeat;
   background-position: center right;
-  background-color: #6070FF;
+  background-color: #6070ff;
   padding: 120px 8% 40px 8%;
   border-radius: 70px 0 0 0;
   display: flex;
@@ -364,14 +363,15 @@ body {
   justify-content: center;
 }
 
-.contact-form input, textarea {
+.contact-form input,
+textarea {
   width: 100%;
   height: 50px;
   border-radius: 8px;
   color: #172b4d;
   padding: 0 15px;
   border: 1px solid #cfd8dc;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -379,7 +379,7 @@ body {
 }
 
 .contact-form ::placeholder {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -395,8 +395,8 @@ body {
   height: 48px;
   left: 24px;
   top: 5317px;
-  padding:0 10px 0 10px;
-  font-family: 'Poppins';
+  padding: 0 10px 0 10px;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -409,6 +409,6 @@ body {
 }
 
 .contact-form button:hover {
-  background-color:#6070ff;
+  background-color: #6070ff;
   color: #fff;
 }
