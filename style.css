@@ -412,3 +412,158 @@ textarea {
   background-color: #6070ff;
   color: #fff;
 }
+
+@media (min-width: 768px) {
+  .main-div {
+    border-radius: 0 0 0 150px;
+  }
+
+  .header {
+    padding: 25px 12%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #6070ff;
+  }
+
+  .info-container {
+    padding: 225px 17%;
+    background-image: url(images/Header\ bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .greetings {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: #172b4d;
+    margin-bottom: 15px;
+  }
+
+  .me {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #344563;
+    margin-bottom: 40px;
+  }
+
+  .connect-tittle {
+    margin-bottom: 30px;
+  }
+
+  .connect-list {
+    margin-bottom: 40px;
+  }
+
+  .works {
+    margin: 150px 12%;
+  }
+
+  .works-list {
+    gap: 150px;
+  }
+
+  .first-work {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    grid-template-areas: "a b";
+  }
+
+  .area-A {
+    grid-area: a;
+  }
+
+  .area-B {
+    grid-area: b;
+  }
+
+  .info-tittle {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .canopy {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .back-end {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .year {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .paragraph {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+
+  .ul-languages {
+    margin-bottom: 15px;
+  }
+
+  .about-myself {
+    padding: 150px 12% 80px 12%;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 30px;
+    border-radius: 0 150px 0 0;
+  }
+
+  .about-myself h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    margin-bottom: 20px;
+  }
+
+  .about-myself p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .languages {
+    margin-top: 0;
+  }
+
+  .tittle-languages h3 {
+    margin-bottom: 30px;
+  }
+
+  .languages-list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .languages-list li {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 122px;
+  }
+
+  .contact-container {
+    background-image: url(images/contact\ form\ background\ shapes.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 150px 0 0 0;
+  }
+}
