@@ -31,6 +31,10 @@ body {
   color: #6070ff;
 }
 
+.header-ul {
+  display: none;
+}
+
 .info-container {
   padding: 150px 8%;
   background-image: url(images/header-shapes\ mobile.png);
@@ -48,7 +52,7 @@ body {
   margin-bottom: 15px;
 }
 
-.me {
+.me-paragraph {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -426,11 +430,35 @@ textarea {
     color: #6070ff;
   }
 
+  .nav-menu i {
+    display: none;
+  }
+
+  .header-ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+
+  .header-ul li {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  .header-ul li a {
+    text-decoration: none;
+    color: #344563;
+  }
+
   .info-container {
     padding: 225px 17%;
     background-image: url(images/Header\ bg.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
   }
 
   .greetings {
@@ -441,7 +469,7 @@ textarea {
     margin-bottom: 15px;
   }
 
-  .me {
+  .me-paragraph {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -563,7 +591,7 @@ textarea {
   .contact-container {
     background-image: url(images/contact\ form\ background\ shapes.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     border-radius: 150px 0 0 0;
   }
 }
