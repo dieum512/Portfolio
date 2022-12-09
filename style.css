@@ -299,11 +299,6 @@ body {
   transition: 0.3s;
 }
 
-.languages-list li:hover {
-  transform: scale(1.08);
-  filter: grayscale(100%);
-}
-
 .languages-list li h4 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -327,6 +322,11 @@ body {
   padding: 10px;
   border-bottom: 1px solid #dfe1e6;
   padding-right: 30px;
+}
+
+.languages-list li:hover {
+  transform: scale(1.08);
+  filter: grayscale(100%);
 }
 
 .others-ul li h2 {
