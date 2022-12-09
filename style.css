@@ -558,8 +558,12 @@ textarea {
     margin-bottom: 40px;
   }
 
+  .connect-list li img {
+    transition: 0.5s;
+  }
+
   .connect-list li img:hover {
-    width: 28px;
+    transform: scale(1.3);
   }
 
   .works {
