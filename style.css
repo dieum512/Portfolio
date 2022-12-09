@@ -97,10 +97,21 @@ body {
   background-color: #fff;
   border-radius: 15px;
   padding: 4%;
+  transition: 250ms;
+}
+
+.first-work:hover {
+  transform: scale(1.1);
 }
 
 .image img {
+  transition: filter 250ms;
   width: 100%;
+}
+
+.first-work img:hover {
+  transform: scale(1.05);
+  filter: grayscale(100%);
 }
 
 .info {
@@ -285,6 +296,12 @@ body {
   background: #f7f7f9;
   border-radius: 8px;
   padding: 10px;
+  transition: 0.3s;
+}
+
+.languages-list li:hover {
+  transform: scale(1.08);
+  filter: grayscale(100%);
 }
 
 .languages-list li h4 {
