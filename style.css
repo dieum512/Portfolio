@@ -223,7 +223,7 @@ body {
   padding: 150px 8% 80px 8%;
 }
 
-.about-myself h1 {
+.about-myself h2 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -253,12 +253,12 @@ body {
   border: 1px solid #396df2;
   padding: 10px 18px;
   border-radius: 10px;
+  transition: 0.4s;
 }
 
 .resume:hover {
   background-color: #396df2;
   color: #fff;
-  transition: 0.4s;
   width: 150px;
   font-size: 20px;
 }
@@ -273,7 +273,7 @@ body {
   padding-right: 30px;
 }
 
-.tittle-languages h3 {
+.tittle-languages h2 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -331,7 +331,7 @@ body {
   filter: grayscale(100%);
 }
 
-.others-ul li h2 {
+.others-ul li h3 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -364,7 +364,7 @@ body {
   max-width: 570px;
 }
 
-.contact-div h1 {
+.contact-div h2 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -442,19 +442,6 @@ textarea {
 }
 
 @media (min-width: 768px) {
-
-  .greetings:hover {
-    font-size: 52px;
-  }
-
-  .me-paragraph:hover {
-    font-size: 25px;
-  }
-
-  .connect-tittle:hover {
-    font-size: 24px;
-  }
-
   .main-div {
     border-radius: 0 0 0 150px;
   }
@@ -529,6 +516,10 @@ textarea {
     transition-timing-function: ease-out;
   }
 
+  .greetings:hover {
+    font-size: 52px;
+  }
+
   @keyframes greetings {
     0% {
       top: -1000px;
@@ -552,6 +543,10 @@ textarea {
     animation-duration: 2s;
     animation-fill-mode: forwards;
     transition-timing-function: ease-out;
+  }
+
+  .me-paragraph:hover {
+    font-size: 25px;
   }
 
   @keyframes me-paragraph {
@@ -584,6 +579,10 @@ textarea {
 
   .connect-tittle {
     margin-bottom: 30px;
+  }
+
+  .connect-tittle:hover {
+    font-size: 24px;
   }
 
   .connect-list {
@@ -664,7 +663,7 @@ textarea {
     border-radius: 0 150px 0 0;
   }
 
-  .about-myself h1 {
+  .about-myself h2 {
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
@@ -681,7 +680,7 @@ textarea {
     margin-top: 0;
   }
 
-  .tittle-languages h3 {
+  .tittle-languages h2 {
     margin-bottom: 30px;
   }
 
