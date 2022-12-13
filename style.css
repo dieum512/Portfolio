@@ -259,6 +259,8 @@ body {
   background-color: #396df2;
   color: #fff;
   transition: 0.4s;
+  width: 150px;
+  font-size: 20px;
 }
 
 .languages {
@@ -440,6 +442,19 @@ textarea {
 }
 
 @media (min-width: 768px) {
+
+  .greetings:hover {
+    font-size: 52px;
+  }
+
+  .me-paragraph:hover {
+    font-size: 25px;
+  }
+
+  .connect-tittle:hover {
+    font-size: 24px;
+  }
+
   .main-div {
     border-radius: 0 0 0 150px;
   }
