@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portofolio</title>
+    <title aria-label="title" >Dieum's Portfolio Website </title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
@@ -26,7 +26,7 @@
     />
   </head>
   <body>
-    <div class="main-div">
+    <div class="main-div" aria-label="navigation" role="navigation">
       <header class="header">
         <div class="logo">
           <a href="#">My Logo</a>
@@ -42,7 +42,7 @@
       </header>
       <main>
         <div class="info-container">
-          <section>
+          <section  aria-label=" my name">
             <h1 class="greetings">I’m Dieum<br />Glad to see you!</h1>
             <p class="me-paragraph">
               I’m a software developer! I can help you build a product , feature
@@ -53,16 +53,14 @@
           </section>
           <section class="connect">
             <h3 class="connect-tittle">LET’S CONNECT</h3>
-            <ul class="connect-list">
+            <ul class="connect-list"  aria-label=" social icon">
               <li>
                 <a href="https://twitter.com/dieumakonkw">
                   <img src="images/twiter.svg" alt="twiter logo" />
                 </a>
               </li>
               <li>
-                <a
-                  href="https://www.limkedin.com/mwlite/in/dieum-akonkwa-7981b924b"
-                >
+                <a href="https://www.linkedin.com/in/dieum-akonkwa-7981b924b/">
                   <img src="images/linkedin.svg" alt="linkedin logo" />
                 </a>
               </li>
@@ -86,7 +84,7 @@
         </div>
       </main>
     </div>
-    <section class="works">
+    <section class="works"  aria-label=" my recent works">
       <div class="works-list">
         <div class="first-work">
           <div class="image area-A">
@@ -112,7 +110,7 @@
               A daily selection of privately personalized reads; no accounts or
               sign-ups required.
             </p>
-            <ul class="ul-languages">
+            <ul class="ul-languages" aria-label=" Programming languages">
               <li>html</li>
               <li>css</li>
               <li>javaScript</li>
@@ -126,7 +124,7 @@
           <div class="image area-B">
             <img
               src="images/Snapshoot Portfolio2.svg"
-              alt="tonic project picture"
+              alt="multi-Post project picture"
             />
           </div>
           <div class="info" area-A>
@@ -146,7 +144,7 @@
               A daily selection of privately personalized reads; no accounts or
               sign-ups required.
             </p>
-            <ul class="ul-languages">
+            <ul class="ul-languages" aria-label=" Programming languages">
               <li>html</li>
               <li>css</li>
               <li>javaScript</li>
@@ -180,7 +178,7 @@
               A daily selection of privately personalized reads; no accounts or
               sign-ups required.
             </p>
-            <ul class="ul-languages">
+            <ul class="ul-languages" aria-label=" Programming languages">
               <li>html</li>
               <li>css</li>
               <li>javaScript</li>
@@ -194,7 +192,7 @@
           <div class="image area-B">
             <img
               src="images/Snapshoot Portfolio4.svg"
-              alt="tonic project picture"
+              alt="multi-Post project picture"
             />
           </div>
           <div class="info area-A">
@@ -214,7 +212,7 @@
               A daily selection of privately personalized reads; no accounts or
               sign-ups required.
             </p>
-            <ul class="ul-languages">
+            <ul class="ul-languages" aria-label=" Programming languages">
               <li>html</li>
               <li>css</li>
               <li>javaScript</li>
@@ -226,9 +224,9 @@
         </div>
       </div>
     </section>
-    <section class="about-myself">
+    <section class="about-myself"  aria-label=" About me">
       <div>
-        <h1>About<br />Myself</h1>
+        <h2>About<br />Myself</h2>
         <p>
           Hello I’m a software developer! I can help you build a product ,
           feature or website Look through some of my work and experience! If you
@@ -237,7 +235,7 @@
         </p>
         <div class="connect-div">
           <h3 class="connect-tittle">LET’S CONNECT</h3>
-          <ul class="connect-list">
+          <ul class="connect-list" aria-label=" social icons">
             <li>
               <a href="https://twitter.com/dieumakonkw">
                 <img src="images/twiter.svg" alt="twiter logo" />
@@ -271,10 +269,10 @@
       </div>
       <div class="languages">
         <div class="tittle-languages">
-          <h3>Languages</h3>
+          <h2>Languages</h2>
           <i class="fas fa-chevron-down"></i>
         </div>
-        <ul class="languages-list">
+        <ul class="languages-list"  aria-label=" Programming languages" >
           <li>
             <img src="images/Ellipse-1.png" alt="javaScript logo" />
             <h4>JavaSript</h4>
@@ -290,21 +288,21 @@
         </ul>
         <ul class="others-ul">
           <li>
-            <h2>Frameworks</h2>
+            <h3>Frameworks</h3>
             <i class="fas fa-chevron-right"></i>
           </li>
           <li>
-            <h2>Skills</h2>
+            <h3>Skills</h3>
             <i class="fas fa-chevron-right"></i>
           </li>
         </ul>
       </div>
     </section>
     <!--contact-->
-    <section class="contact-section">
+    <section class="contact-section"  aria-label=" contact me session">
       <div class="contact-container">
         <div class="contact-div">
-          <h1>Contact me</h1>
+          <h2>Contact me</h2>
           <p>
             If you have an application you are interested in developing, a
             feature that you need built or a project that needs coding. I’d love
@@ -314,32 +312,35 @@
             class="contact-form"
             action="https://formspree.io/f/mwkzgqlb"
             method="post"
-          >
+          > <label for="my name"></label>
             <input
               type="text"
+              aria-label=" my name"
               name="name"
               id="name"
-              placeholder="Name"
+              placeholder="Name*"
               maxlength="30"
               required
-            />
+            /> <Label for="email"></Label>
             <input
               type="email"
+              aria-label=" email"
               name="email"
               id="email"
-              placeholder="Email"
+              placeholder="Email*"
               required
-            />
+            /> <label for="message"> </label>
             <textarea
               name="message"
+              aria-label=" message"
               id="message"
               cols="30"
               rows="10"
-              placeholder="Write your message here"
+              placeholder="Write your message here*"
               maxlength="500"
               required
             ></textarea>
-            <button type="submit" class="contact-button">Get in Touch</button>
+            <button type="submit" class="contact-button"  aria-label=" submit message button">Get in Touch</button>
           </form>
         </div>
       </div>

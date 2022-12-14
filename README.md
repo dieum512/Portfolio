@@ -33,7 +33,7 @@
 
 # 📖 [Portfolio] <a name="about-project"></a>
 
-**[Portfolio]** is a microverse project for the portfolio practice
+**[Portfolio]** is a microverse project for the portfolio designed with css and html to showcase our skills, programming languages and our completed works.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -107,6 +107,12 @@ npm test
 - Twitter: [@dieumakonkw](https://twitter.com/dieumakonkw)
 - LinkedIn: [Dieum Akonkwa](https://www.linkedin.com/in/dieum-akonkwa-7981b924b/)
 
+**Author2**
+
+- GitHub: [@donmark2k](https://github.com/donmark2k/)
+- Twitter: [@donmark2k](https://twitter.com/donmark2k)
+- LinkedIn: [Ochuba Chukwuemeka](https://www.linkedin.com/in/Chukwuemeka-ochuba/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
@@ -115,6 +121,8 @@ npm test
 
 - [ ] **[Finish the mobile version]**
 - [ ] **[Make some changes]**
+- [ ] **[link the social icons]**
+- [ ] **[Finish the desktop version]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
