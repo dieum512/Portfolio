@@ -33,7 +33,7 @@
 
 # 📖 [Portfolio] <a name="about-project"></a>
 
-**[Portfolio]** is a microverse project for the portfolio designed with css and html to showcase our skills, programming languages and our completed works. 
+**[Portfolio]** is a microverse project for the portfolio designed with css and html to showcase our skills, programming languages and our completed works.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -111,7 +111,7 @@ npm test
 
 - GitHub: [@donmark2k](https://github.com/donmark2k/)
 - Twitter: [@donmark2k](https://twitter.com/donmark2k)
-- LinkedIn: [Ochuba  Chukwuemeka](https://www.linkedin.com/in/Chukwuemeka-ochuba/)
+- LinkedIn: [Ochuba Chukwuemeka](https://www.linkedin.com/in/Chukwuemeka-ochuba/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
