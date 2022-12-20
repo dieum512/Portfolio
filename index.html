@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title aria-label="title" >Dieum's Portfolio Website </title>
+    <title aria-label="title">Dieum's Portfolio Website</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
@@ -32,17 +32,21 @@
           <a href="#">My Logo</a>
         </div>
         <nav class="nav-menu">
-          <i class="fas fa-bars"></i>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
           <ul class="header-ul">
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="index.html" class="nav-link">Portfolio</a></li>
+            <li><a href="#about-id" class="nav-link">About</a></li>
+            <li><a href="#contact-id" class="nav-link">Contact</a></li>
           </ul>
         </nav>
       </header>
       <main>
         <div class="info-container">
-          <section  aria-label=" my name">
+          <section aria-label=" my name">
             <h1 class="greetings">I’m Dieum<br />Glad to see you!</h1>
             <p class="me-paragraph">
               I’m a software developer! I can help you build a product , feature
@@ -53,7 +57,7 @@
           </section>
           <section class="connect">
             <h3 class="connect-tittle">LET’S CONNECT</h3>
-            <ul class="connect-list"  aria-label=" social icon">
+            <ul class="connect-list" aria-label=" social icon">
               <li>
                 <a href="https://twitter.com/dieumakonkw">
                   <img src="images/twiter.svg" alt="twiter logo" />
@@ -84,7 +88,7 @@
         </div>
       </main>
     </div>
-    <section class="works"  aria-label=" my recent works">
+    <section class="works" aria-label=" my recent works">
       <div class="works-list">
         <div class="first-work">
           <div class="image area-A">
@@ -224,7 +228,8 @@
         </div>
       </div>
     </section>
-    <section class="about-myself"  aria-label=" About me">
+    <!-- about -->
+    <section id="about-id" class="about-myself" aria-label=" About me">
       <div>
         <h2>About<br />Myself</h2>
         <p>
@@ -272,7 +277,7 @@
           <h2>Languages</h2>
           <i class="fas fa-chevron-down"></i>
         </div>
-        <ul class="languages-list"  aria-label=" Programming languages" >
+        <ul class="languages-list" aria-label=" Programming languages">
           <li>
             <img src="images/Ellipse-1.png" alt="javaScript logo" />
             <h4>JavaSript</h4>
@@ -299,7 +304,11 @@
       </div>
     </section>
     <!--contact-->
-    <section class="contact-section"  aria-label=" contact me session">
+    <section
+      id="contact-id"
+      class="contact-section"
+      aria-label=" contact me session"
+    >
       <div class="contact-container">
         <div class="contact-div">
           <h2>Contact me</h2>
@@ -312,7 +321,8 @@
             class="contact-form"
             action="https://formspree.io/f/mwkzgqlb"
             method="post"
-          > <label for="my name"></label>
+          >
+            <label for="my name"></label>
             <input
               type="text"
               aria-label=" my name"
@@ -321,7 +331,8 @@
               placeholder="Name*"
               maxlength="30"
               required
-            /> <Label for="email"></Label>
+            />
+            <label for="email"></label>
             <input
               type="email"
               aria-label=" email"
@@ -329,7 +340,8 @@
               id="email"
               placeholder="Email*"
               required
-            /> <label for="message"> </label>
+            />
+            <label for="message"> </label>
             <textarea
               name="message"
               aria-label=" message"
@@ -340,10 +352,18 @@
               maxlength="500"
               required
             ></textarea>
-            <button type="submit" class="contact-button"  aria-label=" submit message button">Get in Touch</button>
+            <button
+              type="submit"
+              class="contact-button"
+              aria-label=" submit message button"
+            >
+              Get in Touch
+            </button>
           </form>
         </div>
       </div>
     </section>
+    <!-- js -->
+    <script src="script.js"></script>
   </body>
 </html>
