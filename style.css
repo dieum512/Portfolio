@@ -36,6 +36,35 @@ body {
   transition: 0.8s;
 }
 
+.hamburger {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  z-index: 20;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  background-color: #fff;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: #fff;
+}
+
+.bar {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #6070FF;
+}
+
 .header-ul {
   position: fixed;
   top: 0;
@@ -493,6 +522,12 @@ textarea {
     list-style: none;
     display: flex;
     gap: 30px;
+    position: unset;
+    flex-direction: unset;
+    background-color: unset;
+    position: unset;
+    padding-top: unset;
+    font-weight: unset;
   }
 
   .header-ul li {
@@ -504,6 +539,14 @@ textarea {
     color: #344563;
     position: relative;
     overflow-x: hidden;
+  }
+
+  .header-ul a {
+    margin: unset;
+    font-weight: unset;
+    font-size: unset;
+    line-height: unset;
+    color: unset;
   }
 
   .header-ul li::before {
