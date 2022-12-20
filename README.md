@@ -109,9 +109,9 @@ npm test
 
 **Author2**
 
-- GitHub: [@donmark2k](https://github.com/donmark2k/)
-- Twitter: [@donmark2k](https://twitter.com/donmark2k)
-- LinkedIn: [Ochuba Chukwuemeka](https://www.linkedin.com/in/Chukwuemeka-ochuba/)
+- GitHub: [@fauziyah zeeyah](https://github.com/fauziyahzeeyah)
+<!-- - Twitter: [@donmark2k](https://twitter.com/donmark2k)
+- LinkedIn: [Ochuba Chukwuemeka](https://www.linkedin.com/in/Chukwuemeka-ochuba/) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
