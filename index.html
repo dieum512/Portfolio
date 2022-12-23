@@ -26,6 +26,7 @@
     />
   </head>
   <body>
+    <!-- header -->
     <div class="main-div" aria-label="navigation" role="navigation">
       <header class="header">
         <div class="logo">
@@ -88,146 +89,22 @@
         </div>
       </main>
     </div>
-    <section class="works" aria-label=" my recent works">
-      <div class="works-list">
-        <div class="first-work">
-          <div class="image area-A">
-            <img
-              src="images/Snapshoot Portfolio1.svg"
-              alt="tonic project picture"
-            />
-          </div>
-          <div class="info area-B">
-            <h2 class="info-tittle">Tonic</h2>
-            <ul class="ul-info">
-              <li class="canopy">CANOPY</li>
-              <li>
-                <img src="images/Counter.svg" alt="counter icon" />
-              </li>
-              <li class="back-end">Back End Dev</li>
-              <li>
-                <img src="images/Counter.svg" alt="counter icon" />
-              </li>
-              <li class="year">2015</li>
-            </ul>
-            <p class="paragraph">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <ul class="ul-languages" aria-label=" Programming languages">
-              <li>html</li>
-              <li>css</li>
-              <li>javaScript</li>
-            </ul>
-            <div>
-              <a href="#" class="see-project">See Project</a>
-            </div>
-          </div>
-        </div>
-        <div class="first-work">
-          <div class="image area-B">
-            <img
-              src="images/Snapshoot Portfolio2.svg"
-              alt="multi-Post project picture"
-            />
-          </div>
-          <div class="info" area-A>
-            <h2 class="info-tittle">Multi-Post<br />Stories</h2>
-            <ul class="ul-info">
-              <li class="canopy">CANOPY</li>
-              <li>
-                <img src="images/Counter.svg" alt="counter icon" />
-              </li>
-              <li class="back-end">Back End Dev</li>
-              <li>
-                <img src="images/Counter.svg" alt="counter icon" />
-              </li>
-              <li class="year">2015</li>
-            </ul>
-            <p class="paragraph">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <ul class="ul-languages" aria-label=" Programming languages">
-              <li>html</li>
-              <li>css</li>
-              <li>javaScript</li>
-            </ul>
-            <div>
-              <a href="#" class="see-project">See Project</a>
-            </div>
-          </div>
-        </div>
-        <div class="first-work">
-          <div class="image area-A">
-            <img
-              src="images/Snapshoot Portfolio3.svg"
-              alt="tonic project picture"
-            />
-          </div>
-          <div class="info area-B">
-            <h2 class="info-tittle">Tonic</h2>
-            <ul class="ul-info">
-              <li class="canopy">CANOPY</li>
-              <li>
-                <img src="images/Counter.svg" alt="counter icon" />
-              </li>
-              <li class="back-end">Back End Dev</li>
-              <li>
-                <img src="images/Counter.svg" alt="counter icon" />
-              </li>
-              <li class="year">2015</li>
-            </ul>
-            <p class="paragraph">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <ul class="ul-languages" aria-label=" Programming languages">
-              <li>html</li>
-              <li>css</li>
-              <li>javaScript</li>
-            </ul>
-            <div>
-              <a href="#" class="see-project">See Project</a>
-            </div>
-          </div>
-        </div>
-        <div class="first-work">
-          <div class="image area-B">
-            <img
-              src="images/Snapshoot Portfolio4.svg"
-              alt="multi-Post project picture"
-            />
-          </div>
-          <div class="info area-A">
-            <h2 class="info-tittle">Multi-Post<br />Stories</h2>
-            <ul class="ul-info">
-              <li class="canopy">CANOPY</li>
-              <li>
-                <img src="images/Counter.svg" alt="counter icon" />
-              </li>
-              <li class="back-end">Back End Dev</li>
-              <li>
-                <img src="images/Counter.svg" alt="counter icon" />
-              </li>
-              <li class="year">2015</li>
-            </ul>
-            <p class="paragraph">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <ul class="ul-languages" aria-label=" Programming languages">
-              <li>html</li>
-              <li>css</li>
-              <li>javaScript</li>
-            </ul>
-            <div>
-              <a href="#" class="see-project">See Project</a>
-            </div>
-          </div>
+
+    <!-- cards -->
+    <section class="works">
+      <div class="works-list"></div>
+    </section>
+    <!-- popup window -->
+    <section class="pop-up-section">
+      <div class="modal">
+        <div class="header-1">
+          <h2 class="projectnameinpopop"></h2>
+          <button class="close-btn" id="close-btn">&times</button>
         </div>
       </div>
+      <div class="overlay"></div>
     </section>
+
     <!-- about -->
     <section id="about-id" class="about-myself" aria-label=" About me">
       <div>
@@ -364,6 +241,6 @@
       </div>
     </section>
     <!-- js -->
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
