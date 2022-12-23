@@ -36,23 +36,6 @@ const data = {
       seeProjectBtnText: 'See Project',
     },
     {
-      key: 2,
-      projectName: 'Tonic',
-      companyName: 'CANOPY',
-      projectCounterIcon: 'images/Counter.svg',
-      projectImage: 'images/Snapshoot Portfolio3.svg',
-      projectPosition: 'Back End Dev',
-      projectDate: '2015',
-      projectTechHtml: 'html',
-      projecttechCss: 'csss',
-      projectTechJs: 'Javascript',
-      projectDescription: `A daily selection of privately personalized reads; no accounts or
-            sign-ups required.`,
-      liveLink: '#',
-      sourceLink: '3',
-      seeProjectBtnText: 'See Project',
-    },
-    {
       key: 3,
       projectName: 'Multi-Post Stories',
       companyName: 'CANOPY',
