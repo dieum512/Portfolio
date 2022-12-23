@@ -289,13 +289,14 @@ body {
   position: fixed;
   top: 10%;
   left: 50%;
-  transform: translate(-50%, -10%) scale(0);
+  transform: translateX(-50%) scale(0);
   transition: 0.5s ease-in-out;
   border: 1px solid #fff;
   background-color: #fff;
   border-radius: 10px;
-  z-index: 9999;
-  width: 70%;
+  overflow-y: auto;
+  z-index: 88787879;
+  width: 90%;
   padding: 10px 5%;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -420,6 +421,7 @@ body {
   display: none;
   pointer-events: none;
   transition: 0.5s ease-in-out;
+  z-index: 9999;
 }
 
 .overlay.active {
@@ -868,21 +870,22 @@ textarea {
   }
 
   .modal {
-    position: fixed;
+    position: -webkit-sticky;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     border: 1px solid #fff;
     background-color: #fff;
     border-radius: 10px;
-    z-index: 9999;
-    max-width: 600px;
-
-    /* width: 70%; */
+    z-index: 99999;
+    max-width: 1156px;
+    width: 80%;
     padding: 10px 5%;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     color: #172b4d;
+    overflow-y: scroll;
+    height: 90%;
   }
 
   .modal.active {
