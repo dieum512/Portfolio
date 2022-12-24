@@ -166,7 +166,7 @@ overlay.addEventListener('click', () => {
 
 // Add form validation
 
-const submitForm = document.querySelector('.contact-button');
+// const submitForm = document.querySelector('.contact-button');
 const emailInput = document.querySelector('.email-input');
 const messageInput = document.querySelector('.form-message');
 const nameInput = document.querySelector('.name-input');
