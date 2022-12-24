@@ -168,6 +168,30 @@ overlay.addEventListener('click', () => {
 
 const submitForm = document.querySelector('.contact-button');
 const emailInput = document.querySelector('.email-input');
+const messageInput = document.querySelector('.form-message');
+const nameInput = document.querySelector('.name-input');
+const inputsArray = [nameInput, emailInput, messageInput];
+const myForm = document.querySelector('.contact-form');
+
+function saveFormInputs(name, email, message) {
+  const formInformation = {
+    name: name.value,
+    email: email.value,
+    message: message.value,
+  };
+  localStorage.setItem('formInformation', JSON.stringify(formInformation));
+}
+
+// submit validation
+window.addEventListener('load', () => {
+  if (JSON.parse(localStorage.getItem('formInformation'))) {
+    const { name, email, message } = JSON.parse(localStorage.getItem('formInformation'));
+    nameInput.value = name;
+    emailInput.value = email;
+    messageInput.value = message;
+  }
+});
+
 const errorMesage = document.querySelector('.err-message');
 submitForm.addEventListener('click', (e) => {
   if (emailInput.value !== emailInput.value.toLowerCase()) {
@@ -175,22 +199,53 @@ submitForm.addEventListener('click', (e) => {
     emailInput.parentElement.classList.add('invalid-input');
     submitForm.parentElement.classList.add('invalid-input');
     submitForm.classList.add('submit-contact-disable');
-  }
-});
-emailInput.addEventListener('input', (e) => {
-  if (e.target.value !== emailInput.value.toLowerCase()) {
-    e.preventDefault();
-    emailInput.classList.add('invalid-input');
-    submitForm.classList.add('submit-contact-disable');
-    emailInput.style.border = '2px solid red';
-    errorMesage.style.display = 'block';
-    errorMesage.style.color = 'red';
-    submitForm.style.color = '#c1c7d0';
   } else {
-    errorMesage.style.display = 'none';
-    emailInput.style.border = 'none';
-    submitForm.classList.remove('submit-contact-disable');
-    emailInput.parentElement.classList.remove('invalid-input');
-    submitForm.parentElement.classList.remove('invalid-input');
+    saveFormInputs(nameInput, emailInput, messageInput);
+    myForm.reset();
   }
 });
+
+inputsArray.forEach((input) => input.addEventListener('input', (e) => {
+  if (input === nameInput) {
+    nameInput.value = input.value;
+  } else if (input === emailInput) {
+    emailInput.value = input.value;
+    // Add validation email
+    if (e.target.value !== emailInput.value.toLowerCase()) {
+      e.preventDefault();
+      emailInput.classList.add('invalid-input');
+      submitForm.classList.add('submit-contact-disable');
+      emailInput.style.border = '2px solid red';
+      errorMesage.style.display = 'block';
+      errorMesage.style.color = 'red';
+      submitForm.style.color = '#c1c7d0';
+    } else {
+      errorMesage.style.display = 'none';
+      emailInput.style.border = 'none';
+      submitForm.classList.remove('submit-contact-disable');
+      emailInput.parentElement.classList.remove('invalid-input');
+      submitForm.parentElement.classList.remove('invalid-input');
+    }
+  } else {
+    messageInput.value = input.value;
+  }
+  saveFormInputs(nameInput, emailInput, messageInput);
+}));
+
+// emailInput.addEventListener('input', (e) => {
+//   if (e.target.value !== emailInput.value.toLowerCase()) {
+//     e.preventDefault();
+//     emailInput.classList.add('invalid-input');
+//     submitForm.classList.add('submit-contact-disable');
+//     emailInput.style.border = '2px solid red';
+//     errorMesage.style.display = 'block';
+//     errorMesage.style.color = 'red';
+//     submitForm.style.color = '#c1c7d0';
+//   } else {
+//     errorMesage.style.display = 'none';
+//     emailInput.style.border = 'none';
+//     submitForm.classList.remove('submit-contact-disable');
+//     emailInput.parentElement.classList.remove('invalid-input');
+//     submitForm.parentElement.classList.remove('invalid-input');
+//   }
+// });
