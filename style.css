@@ -8,6 +8,22 @@ body {
   background-color: #e5e5e5;
 }
 
+.invalid-input {
+  border: 2px solid red;
+}
+
+.submit-contact-disable {
+  pointer-events: none;
+  border: 1px solid #c1c7d0;
+  background-color: #fff;
+  color: #5e6c84;
+}
+
+.err-message {
+  display: none;
+  color: red;
+}
+
 .main-div {
   background-color: #fff;
   border-radius: 0 0 0 70px;

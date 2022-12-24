@@ -163,3 +163,34 @@ overlay.addEventListener('click', () => {
   modal.classList.remove('active');
   overlay.classList.remove('active');
 });
+
+// Add form validation
+
+const submitForm = document.querySelector('.contact-button');
+const emailInput = document.querySelector('.email-input');
+const errorMesage = document.querySelector('.err-message');
+submitForm.addEventListener('click', (e) => {
+  if (emailInput.value !== emailInput.value.toLowerCase()) {
+    e.preventDefault();
+    emailInput.parentElement.classList.add('invalid-input');
+    submitForm.parentElement.classList.add('invalid-input');
+    submitForm.classList.add('submit-contact-disable');
+  }
+});
+emailInput.addEventListener('input', (e) => {
+  if (e.target.value !== emailInput.value.toLowerCase()) {
+    e.preventDefault();
+    emailInput.classList.add('invalid-input');
+    submitForm.classList.add('submit-contact-disable');
+    emailInput.style.border = '2px solid red';
+    errorMesage.style.display = 'block';
+    errorMesage.style.color = 'red';
+    submitForm.style.color = '#c1c7d0';
+  } else {
+    errorMesage.style.display = 'none';
+    emailInput.style.border = 'none';
+    submitForm.classList.remove('submit-contact-disable');
+    emailInput.parentElement.classList.remove('invalid-input');
+    submitForm.parentElement.classList.remove('invalid-input');
+  }
+});
