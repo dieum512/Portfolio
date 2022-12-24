@@ -14,9 +14,9 @@ body {
 
 .submit-contact-disable {
   pointer-events: none;
-  border: 1px solid #C1C7D0;
+  border: 1px solid #c1c7d0;
   background-color: #fff;
-  color: #5E6C84;
+  color: #5e6c84;
 }
 
 .err-message {
